@@ -1,0 +1,237 @@
+    1  git --version
+    2  cd
+    3  ssh-keygen
+    4  ls -la
+    5  cat .ssh/id_ed25519/id_ed25519.pub
+    6  cat .ssh/id_ed25519.pub 
+    7  ssh ec2-user@linux.itcareerhub.de
+    8  pwd
+    9  cd
+   10  cat .ssh/id_ed25519.pub
+   11  ssh  ec2-user@linux.itcareerhub.de
+   12  ssh  ec2-user@linux.itcareerhub.de
+   13  ssh  ec2-user@linux.itcareerhub.de
+   14  ssh  ec2-user@linux.itcareerhub.de
+   15  ssh  ec2-user@linux.itcareerhub.de
+   16  ssh  ec2-user@linux.itcareerhub.de
+   17  pwd
+   18  find --help
+   19  ssh  ec2-user@linux.itcareerhub.de
+   20  cd linux
+   21  cd HW_Python
+   22  git status
+   23  git add .
+   24  git status
+   25  git commit -m "HW13/Homework_Python13.py"
+   26  git push 
+   27  cd
+   28  cd linx/HW_linux
+   29  cd linx/HW_Linux
+   30  cd linux/HW_Linux
+   31  cd Homework11
+   32  scp ec2-user@linux.itcareerhub.de:/opt/210225-ptm/platonova/permission_checker.sh .
+   33  git add .
+   34  git status
+   35  git commit -m "added HW_Linux/Homework11/permission_checker.sh"
+   36  git push
+   37  cd ..
+   38  cd ..
+   39  git add .
+   40  git status
+   41  git commit -m "added HW_Python/HW14/Homework_Python14.py"
+   42  git push
+   43  git add .
+   44  git status
+   45  git commit -m "added HW_Database/HW7/Homework_DB_7.sql"
+   46  git push
+   47  cd ..
+   48  git status
+   49  mk dir git-merge-vs-rebase
+   50  mkdir git-merge-vs-rebase
+   51  cd git-merge-vs-rebase
+   52  git init
+   53   git branch -M main
+   54  echo "Hallo, Welt!" > file.txt
+   55  git add file.txt
+   56  git status
+   57  git commit -m "init: first commit for file.txt"
+   58  git checkout -b feature
+   59  echo "Feature 1" >> file.txt
+   60  git commit -m "feature: update file.txt"
+   61  echo "Feature 2" >> file.txt
+   62  git commit -am "feature: update2 file.txt"
+   63  git status
+   64  git branch
+   65  git checkout main
+   66  git branch
+   67  echo "Feature 3 for main" >> file.txt
+   68  git commit -am "main: update3 file.txt"
+   69  history
+   70  git status
+   71  git merge feature
+   72  git status
+   73  nano file.txt
+   74  git log --online--graph--all
+   75  git log --online --graph --all
+   76  git commit -am "merge feuture to main"
+   77  git log --online --graph --all
+   78  git log --oneline --graph --all
+   79  cd 
+   80  mkdir git-conflict-demo
+   81  cd git-conflict-demo
+   82  gir init
+   83  git init
+   84  git branch -M main
+   85  echo "Hello пивет Мир!">file.txt
+   86  git commit -m "init: first commit"
+   87  git checkout -b feature
+   88  echo "Эта строка добавлена в ветку feature" >> file.txt
+   89  git status
+   90  git commit -am "feature:добавлена строка в файл file.txt"
+   91  git checkout main
+   92  git branch
+   93  git checkout main
+   94  history
+   95  git branch
+   96  git checkout -b main
+   97  git branch
+   98  git checkout feature
+   99  ls
+  100  git switch -c feature
+  101  git branch
+  102  cd 
+  103  cd git-conflict-demo/
+  104  git branch
+  105  git branch -a
+  106  ssh  ec2-user@linux.itcareerhub.de
+  107  ssh  ec2-user@linux.itcareerhub.de
+  108  cd
+  109  cd git-c
+  110  cd git-conflict-demo/
+  111  git branch
+  112  ls -al
+  113  rm -rf .git file.txt
+  114  ls -al
+  115  git init
+  116  echo "hallo" > file.txt
+  117  git add .
+  118  git commit -m "first commit"
+  119  git checkout -b branch2
+  120  git branch
+  121  echo "add new string" >> file.txt
+  122  git commit "vetka 2: commit"
+  123  git branch
+  124  git checkout -b master
+  125  git checkout  master
+  126  echo "update file in master" >> file.txt
+  127  git add .
+  128  git commit -m "commit for master"
+  129  git merge branch2 
+  130  cd 
+  131  cd git-conflict-demo/
+  132  git branch
+  133  git checkout branch2
+  134  echo "etwas text" > test.txt
+  135  ls
+  136  git add .
+  137  git commit -m "error in commit"
+  138  git log
+  139  git log --oneline
+  140  git commit --amend
+  141  git log --oneline
+  142  vi
+  143  cd 
+  144  cd git-c
+  145  cd git-conflict-demo/
+  146  ls
+  147  cat test.txt 
+  148  git log
+  149  git status
+  150  rm -rf .swp
+  151  git status
+  152  ls -alh
+  153  git log --oneline
+  154  git reset --soft HEAD ~1
+  155  git reset --soft HEAD~1
+  156  git log --oneline
+  157  git commit -m "last update"
+  158  git log --oneline
+  159  git reset --mixed HEAD~1
+  160  git log --oneline
+  161  git status
+  162  git reset --hard HEAD~1
+  163  git log --oneline
+  164  ls -l
+  165  git checkout main
+  166  git branch
+  167  git checkout master
+  168  echo "update 3" >> file.txt
+  169  git add .
+  170  git checkout -- file.txt
+  171  cat file.txt 
+  172  git commit -m "update 3 commit"
+  173  git checkout -- file.txt
+  174  cat file.txt 
+  175  git restore -- file.txt
+  176  cat file.txt 
+  177  echo "update 44444" >> file.txt
+  178  cat file.txt 
+  179  git checkout -- file.txt
+  180  cat file.txt 
+  181  echo "update 44444" >> file.txt
+  182  git add .
+  183  git status
+  184  git rm --cached file.txt 
+  185  git status
+  186  git log --oneline
+  187  git revert e824092 
+  188  git stash
+  189  git revert e824092
+  190  git revert e824092
+  191  git log --oneline
+  192  git revert 9a45279
+  193  nano .gitignore
+  194  git commit -am "added .gitignore"
+  195  toch 1.jpg
+  196  touch 1.jpg
+  197  git status
+  198  git log --oneline
+  199  git add .
+  200  git status
+  201  git commit -am "added .gitignore repit"
+  202  git remote add origin git@github.com:irynaPL99/git-conflict-demo.git
+  203  git remote -v
+  204  git push -u origin master
+  205  cd 
+  206  cd linux
+  207  cd HW_Python/
+  208  git add .
+  209  git status
+  210  git commit -m "added new file:   HW15/Homework_Python15.py"
+  211  git push
+  212  cd 
+  213  mkdir HW_Linux_12
+  214  cd HW_Linux_12/
+  215  echo "# HW_Linux_12   test repositariy" >> README.txt
+  216  git init
+  217  git add README.txt
+  218  git status
+  219  git commit -m "first commit"
+  220  git branch -M main
+  221  git add .
+  222  git status
+  223  git commit -m "added .gitignore"
+  224  git remote add origin git@github.com:irynaPL99/HW_Linux_12.git
+  225  git push -u origin main
+  226  git checkout -b feature
+  227  nano README.txt 
+  228  nano .gitignore.txt 
+  229  git add .
+  230  git status
+  231  git commit -m "update in "feature": README.txt .gitignore"
+  232  git push
+  233  git push -u origin feature
+  234  git commit --amend
+  235  git checkout main
+  236  git merge feature
+  237  history > history.txt
