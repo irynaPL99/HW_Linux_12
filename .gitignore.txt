@@ -1,3 +1,4 @@
+# test for HW 12, 24-04-2025
 # Created by https://www.toptal.com/developers/gitignore/api/python
 # Edit at https://www.toptal.com/developers/gitignore?templates=python
 
